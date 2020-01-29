@@ -2,7 +2,7 @@ import os
 import numpy as np
 from glob import glob
 from keras.preprocessing.image import *
-from behind_the_scenes.CNN_model import model
+from background_work.CNN_model import model
 
 
 print('Please connect your smartphone and copy the absoute path to your whatsapp folder')
@@ -10,12 +10,12 @@ print('For example: "/run/user/1000/gvfs/mtp:host=%5Busb%3A003%2C002%5D/Internal
 WA_path = input('Enter absolute path of WhatsApp folder: \n')
 
 WA_impath = WA_path + '/Media/WhatsApp Images/'
-WA_impath.replace('//', '/') # shit happens
-WA_impath.replace(' ', '\\ ') # replace spaces with their escaped versions
+WA_impath.replace('//', '/')
+WA_impath.replace(' ', '\\ ')
 
 # define model
 model = model()
-model.load_weights('behind_the_scenes/weights.h5')
+model.load_weights('background_work/weights.h5')
 
 notes_path = WA_img_path + 'notes/'
 if not os.path.exists(notes_path):
