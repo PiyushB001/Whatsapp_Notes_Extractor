@@ -5,7 +5,7 @@ I felt an urge to do something which could just clean these notes from my phone 
 
 Something Like this:
 
-(https://github.com/PiyushB001/Whatsapp_Notes_Extractor/blob/master/background_work/Image.jpeg)
+[](https://github.com/PiyushB001/Whatsapp_Notes_Extractor/blob/master/background_work/Image.jpeg)
 
 Images in red circles are notes which you may wanna delete or extract them to a folder (in case you are a maggu :P) and blue circles are important ones which shouldn't be messed up with.
 
